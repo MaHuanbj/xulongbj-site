@@ -1604,3 +1604,190 @@ body {
     padding: 24px;
   }
 }
+
+/* ==================== 增强移动端适配 ==================== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 16px 60px;
+  }
+  
+  .hero-container {
+    gap: 32px;
+  }
+  
+  .hero-poster-img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .hero-badge {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+  
+  .hero-desc {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  
+  .stats-bar {
+    padding: 32px 16px;
+  }
+  
+  .stat-number {
+    font-size: 22px;
+  }
+  
+  .stat-label {
+    font-size: 12px;
+  }
+  
+  .certification {
+    padding: 40px 16px 50px;
+  }
+  
+  .cert-banner-img {
+    border-radius: 8px;
+  }
+  
+  .enrollment {
+    padding: 50px 16px 40px;
+  }
+  
+  .query-section {
+    padding: 60px 16px;
+  }
+  
+  .achievements {
+    padding: 60px 16px;
+  }
+  
+  .work-card-img {
+    aspect-ratio: 16 / 9;
+  }
+  
+  .work-card-content {
+    padding: 16px 18px 20px;
+  }
+  
+  .work-card-title {
+    font-size: 16px;
+  }
+  
+  .work-card-desc {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  
+  .media-section {
+    padding: 50px 16px 60px;
+  }
+  
+  .footer {
+    padding: 40px 16px 0;
+  }
+  
+  .result-card-body {
+    padding: 20px;
+  }
+  
+  .result-name {
+    font-size: 18px;
+  }
+  
+  .nav-logo-subtitle {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-badge {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+  
+  .stats-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  
+  .stat-number {
+    font-size: 20px;
+  }
+  
+  .media-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .media-btn {
+    padding: 14px 10px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+  
+  .cert-card {
+    padding: 24px 18px;
+  }
+  
+  .cert-card-title {
+    font-size: 15px;
+  }
+  
+  .cert-card-desc {
+    font-size: 12px;
+  }
+  
+  .criteria-item {
+    padding: 16px;
+  }
+  
+  .level-card {
+    padding: 20px 16px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* ==================== 增强 PC 端效果 ==================== */
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 52px;
+  }
+  
+  .hero-desc {
+    font-size: 16px;
+  }
+  
+  .work-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  
+  .cert-grid {
+    gap: 28px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+  }
+  
+  .cert-title {
+    font-size: 36px;
+  }
+}
+
+/* ==================== 图片优化 ==================== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.work-card-img img,
+.hero-poster-img,
+.cert-banner-img {
+  loading: lazy;
+}
